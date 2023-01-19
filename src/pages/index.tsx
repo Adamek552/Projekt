@@ -39,6 +39,15 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
     <>
       <Head>
         <title>{config.title}</title>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0P162BEZEX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0P162BEZEX');
+</script>
       </Head>
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
